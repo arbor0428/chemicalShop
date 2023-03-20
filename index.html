@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/board.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/sub.css">
+	<link rel="stylesheet" type="text/css" href="./css/mediaquery.css">
+
+    <link rel="stylesheet" type="text/css" href="/module/popupoverlay/popupoverlay.css">
+
+    <!--roboto--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+	<!-- slick 불러오기 -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+	<!-- swiper -->
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" />
+
+	<!-- bxslider -->
+	<link rel="stylesheet" href="/css/jquery.bxslider.css">
+	<script type="text/javascript" src="/module/js/jquery.bxslider.js"></script>
+
+	<!-- gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    
+    <title>UL CHEMICAL</title>
+</head>
+<body>
+    <header class="header">
+        <div class="h_top gry">
+            <div class="c_center">
+                <ul class="h_top_menu dp_f dp_c dp_end02">
+                    <li class="dp_f dp_c"><a href="" title="로그인">로그인</a></li>
+                    <li class="dp_f dp_c"><a href="" title="회원가입">회원가입</a></li>
+                    <li class="dp_f dp_c"><a href="" title="고객센터">고객센터</a></li>
+                    <li class="dp_f dp_c"><a href="" title="회사소개">회사소개</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_mid">
+            <div class="c_center dp_sb">
+                <h1 class="logo"><a href="/" title="로고"><img src="./images/top_logo.svg" alt=""></a></h1>
+                <div class="h_search_box">
+                    <input type="text" placeholder="검색어를 입력해주세요.">
+                    <button class="dp_f dp_c dp_cc h_search_btn"><img src="./images/search_icon.png" alt="검색"></button>
+                </div>
+                <ul class="icons_menu dp_f dp_c">
+                    <li><a href="" title="마이페이지"><img src="./images/user_icon.svg" alt="마이페이지"></a></li>
+                    <li><a href="" title="장바구니"><img src="./images/cart_icon.svg" alt="장바구니"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_bot">
+            <div class="c_center dp_f">
+                <div class="pc_hamburger dp_f dp_c dp_cc">
+                    <div class="h_bar_wrap">
+                        <div class="h_bar"></div>
+                        <div class="h_bar"></div>
+                        <div class="h_bar"></div>
+                    </div>
+                </div>
+                <ul class="depth1 dp_f dp_c">
+                    <li><a class="dp_f dp_c dp_cc" href="" title="브랜드별">브랜드별</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="제품소개">제품소개</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="이벤트">이벤트</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="고객지원">고객지원</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="자료실">자료실</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="회사소개">회사소개</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="container">
+        <section class="cont01">
+            <div class="swiper visual_swiper">
+                <div class="swiper-wrapper">
+                    <div class="visual_box swiper-slide">
+                        <div class="c_center dp_f dp_fc dp_cc">
+                            <div class="visual_txt">
+                                <p class="visual_tit c_wht pretendard bold2">국내외 연구, 실험용 과학기기 수입 및 국내 유통 전문</p>
+                                <p class="visual_det c_wht pretendard bold2">UL CHEMICAL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual_box swiper-slide">
+                        <div class="c_center dp_f dp_fc dp_cc">
+                            <div class="visual_txt">
+                                <p class="visual_tit c_wht pretendard bold2">국내외 연구, 실험용 과학기기 수입 및 국내 유통 전문</p>
+                                <p class="visual_det c_wht pretendard bold2">UL CHEMICAL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual_box swiper-slide">
+                        <div class="c_center dp_f dp_fc dp_cc">
+                            <div class="visual_txt">
+                                <p class="visual_tit c_wht pretendard bold2">국내외 연구, 실험용 과학기기 수입 및 국내 유통 전문</p>
+                                <p class="visual_det c_wht pretendard bold2">UL CHEMICAL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <script>
+        var swiper01 = new Swiper(".visual_swiper", {
+            effect: 'slide',
+            slidesPerView: 1,
+            autoplay: {     //자동슬라이드 (false-비활성화)
+                delay: 5000, // 시간 설정
+                disableOnInteraction: false, // false-스와이프 후 자동 재생
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+        </script>
+        <section class="cont02">
+            <div class="c_center">
+                <div class="best_swiper_btn dp_sb dp_c">
+                    <p class="c_tit roboto">BEST PRODUCT</p>
+                    <div class="dp_f dp_c">
+                        <div class="swiper-button-prev-unique"></div>
+                        <div class="swiper-button-next-unique"></div>
+                    </div>
+                </div>
+                <div class="swiper best_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb01.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">OHAUS</p>
+                                    <p class="best_tit ellipsis">오하우스 전자저울 TAG3001F TAG3001F TAG3001F TAG3001F</p>
+                                    <span class="best_price">175,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb02.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">OHAUS</p>
+                                    <p class="best_tit ellipsis">오하우스 전자저울 CSG5000F CSG5000F CSG5000F CSG5000F CSG5000F</p>
+                                    <span class="best_price">50,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb03.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">JSR</p>
+                                    <p class="best_tit ellipsis">Indirect Heated Digital Water Water Water Water Water Water</p>
+                                    <span class="best_price">3,000,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb04.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">OHAUS</p>
+                                    <p class="best_tit ellipsis">오하우스(OHAUS) 정밀전자저울 정밀전자저울 정밀전자저울 정밀전자저울 정밀전자저울 정밀전자저울</p>
+                                    <span class="best_price">2,838,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb01.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">OHAUS</p>
+                                    <p class="best_tit ellipsis">오하우스 전자저울 TAG3001F TAG3001F TAG3001F TAG3001F</p>
+                                    <span class="best_price">175,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb02.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">OHAUS</p>
+                                    <p class="best_tit ellipsis">오하우스 전자저울 CSG5000F CSG5000F CSG5000F CSG5000F CSG5000F</p>
+                                    <span class="best_price">50,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb03.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">JSR</p>
+                                    <p class="best_tit ellipsis">Indirect Heated Digital Water Water Water Water Water Water</p>
+                                    <span class="best_price">3,000,000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_product_box swiper-slide">
+                            <a href="" title="">
+                                <div class="best_img_wrap dp_f dp_c dp_cc">
+                                    <img src="./images/thumb04.png" alt="">
+                                </div>
+                                <div class="best_txt_box">
+                                    <p class="best_label c_blue">OHAUS</p>
+                                    <p class="best_tit ellipsis">오하우스(OHAUS) 정밀전자저울 정밀전자저울 정밀전자저울 정밀전자저울 정밀전자저울 정밀전자저울</p>
+                                    <span class="best_price">2,838,000</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+        var swiper02 = new Swiper(".best_swiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next-unique",
+                prevEl: ".swiper-button-prev-unique",
+            },
+            autoplay: {     //자동슬라이드 (false-비활성화)
+                delay: 2500, // 시간 설정
+                disableOnInteraction: false, // false-스와이프 후 자동 재생
+            },
+            loop: true,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    paceBetween: 50,
+                    allowTouchMove: true,
+                },
+                600: {
+                    slidesPerView: 2,
+                    paceBetween: 50,
+                    allowTouchMove: true,
+                },
+                200: {
+                    slidesPerView: 1,
+                    paceBetween: 50,
+                    allowTouchMove: true,
+                },
+            },
+        });
+        </script>
+        <section class="cont03 gry">
+            <div class="c_center">
+                <p class="c_tit roboto">BRAND</p>
+                <ul class="brand_wrap dp_sb dp_c dp_wrap">
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand01.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand02.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand03.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand04.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand05.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand06.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand07.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand08.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand09.png" alt=""></li>
+                    <li class="dp_f dp_c dp_cc"><img src="./images/brand10.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section class="cont04">
+            <div class="c_center">
+                <div class="main_go_to_wrap dp_sb">
+                    <div class="main_go_to">
+                        <div class="main_go_to_bg"></div>
+                        <a class="dp_f dp_fc dp_end02" href="" title="대리점 안내">
+                            <div class="txt_box c_wht">
+                                <p class="txt_bot_tit">대리점 안내</p>
+                                <span class="txt_bot_det roboto">Agency Guide</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main_go_to">
+                        <div class="main_go_to_bg"></div>
+                        <a class="dp_f dp_fc dp_end02" href="" title="견적문의">
+                            <div class="txt_box c_wht">
+                                <p class="txt_bot_tit">견적문의</p>
+                                <span class="txt_bot_det roboto">Estimate Inquiry</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="f_top gry02">
+            <div class="c_center dp_sb dp_c">
+                <div class="news_rolling dp_f dp_c">
+                    <div class="news_rolling_tit">공지사항</div>
+                    <div class="swiper news_rolling_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="privacy_menu dp_f dp_c dp_end02">
+                    <li><a class="bold2" href="" title="개인정보처리방침">개인정보처리방침</a></li>
+                    <li><a href="" title="이용약관">이용약관</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="f_bot">
+            <div class="c_center dp_sb">
+                <div class="f_bot_box">
+                    <img class="f_logo" src="./images/foot_logo.svg" alt="로고">
+                    <ul class="company_info_list">
+                        <li class="dp_f dp_c">
+                            <span class="bold2">주식회사 유엘케미칼</span>
+                            <span>대표자 : 김동현</span>
+                        </li>
+                        <li class="dp_f dp_c">대구 북구 유통단지로8길 120-10</li>
+                        <li class="dp_f dp_c">
+                            <span>사업자등록번호 : 504-86-06607</span>
+                            <span>통신판매업번호 : 2015-대구북구-0265</span>
+                        </li>
+                        <li class="dp_f dp_c">
+                            <span>TEL : 1544-7540</span>
+                            <span>FAX : 053-384-7716</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_bot_box dp_sb">
+                    <div class="cs_box">
+                        <p class="cs_box_tit roboto bold2">CS CENTER</p>
+                        <p class="represent_num roboto">1544-7540</p>
+                        <p class="email_info dp_f dp_c">
+                            <span>이메일</span>
+                            <span>ulchemical@naver.com</span>
+                        </p>
+                    </div>
+                    <div class="cs_box">
+                        <p class="cs_box_tit roboto bold2">BANK INFO</p>
+                        <p class="bank_owner bold2">예금주: (주)유엘케미칼</p>
+                        <p class="bank_num">00은행 000000-00-000000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var swiper03 = new Swiper(".news_rolling_swiper", {
+            direction: 'vertical',
+            effect: 'slide',
+            slidesPerView: 1,
+            autoplay: {     //자동슬라이드 (false-비활성화)
+                delay: 2500, // 시간 설정
+                disableOnInteraction: false, // false-스와이프 후 자동 재생
+            },
+            loop: true,
+        });
+    </script>
+</body>
+</html>
