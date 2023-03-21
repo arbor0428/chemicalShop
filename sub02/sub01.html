@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/board.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+
+    <link rel="stylesheet" type="text/css" href="/module/popupoverlay/popupoverlay.css">
+
+    <!--roboto--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+	<!-- swiper -->
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" />
+
+	<!-- gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    
+    <title>UL CHEMICAL</title>
+</head>
+<body>
+    <header class="header">
+        <div class="h_top gry">
+            <div class="c_center">
+                <ul class="h_top_menu dp_f dp_c dp_end02">
+                    <li class="dp_f dp_c"><a href="" title="로그인">로그인</a></li>
+                    <li class="dp_f dp_c"><a href="" title="회원가입">회원가입</a></li>
+                    <li class="dp_f dp_c"><a href="" title="고객센터">고객센터</a></li>
+                    <li class="dp_f dp_c"><a href="" title="회사소개">회사소개</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_mid">
+            <div class="c_center dp_sb">
+                <h1 class="logo"><a href="/" title="로고"><img src="../images/top_logo.svg" alt=""></a></h1>
+                <div class="h_search_box">
+                    <input type="text" placeholder="검색어를 입력해주세요.">
+                    <button class="dp_f dp_c dp_cc h_search_btn"><img src="../images/search_icon.png" alt="검색"></button>
+                </div>
+                <ul class="icons_menu dp_f dp_c">
+                    <li><a href="" title="마이페이지"><img src="../images/user_icon.svg" alt="마이페이지"></a></li>
+                    <li><a href="" title="장바구니"><img src="../images/cart_icon.svg" alt="장바구니"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_bot">
+            <div class="c_center dp_f">
+                <div class="pc_hamburger dp_f dp_c dp_cc">
+                    <div class="h_bar_wrap">
+                        <div class="h_bar"></div>
+                        <div class="h_bar"></div>
+                        <div class="h_bar"></div>
+                    </div>
+                </div>
+                <ul class="depth1 dp_f dp_c">
+                    <li><a class="dp_f dp_c dp_cc" href="" title="브랜드별">브랜드별</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="제품소개">제품소개</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="이벤트">이벤트</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="고객지원">고객지원</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="자료실">자료실</a></li>
+                    <li><a class="dp_f dp_c dp_cc" href="" title="회사소개">회사소개</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="subWrap">
+        <div class="sub_top_menu_wrap gry">
+            <div class="c_center dp_f dp_c">
+                <a href="/" class="top_home"><img src="../images/nav_home.svg" alt=""></a>
+                <ul class="sub_top_menu dp_f dp_c">
+                    <li>제품소개</li>
+                    <li class="nav_arr dp_f dp_c"><img src="../images/nav_arr.svg" alt="화살표"></li>
+                    <li>분석/측정장비</li>
+                    <li class="nav_arr dp_f dp_c"><img src="../images/nav_arr.svg" alt="화살표"></li>
+                    <li class="bold2">수질분석측정기</li>
+                </ul>
+            </div>
+        </div>
+        <div class="c_center dp_sb">
+            <div class="sidemenu">
+                <div class="sidemenu_box">
+                    <p class="sidemenu_tit01 c_blue bold2">카테고리</p>
+                    <div class="sidemenu_check_list">
+                        <p class="sidemenu_tit02 bold2">분석/측정장비</p>
+                        <p class="sidemenu_tit03 bold2">수질분석측정기</p>
+                        <ul>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_1">
+                                    <label for="category1_1">탁상형 수소이온농도 측정기</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_2">
+                                    <label for="category1_2">탁상형 전도도 측정기</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_3">
+                                    <label for="category1_3">휴대형 수소이온농도 측정기</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_4">
+                                    <label for="category1_4">휴대형 전도도 측정기</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_5">
+                                    <label for="category1_5">휴대형 용존산소 측정기</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_6">
+                                    <label for="category1_6">휴대형 OPR 측정기</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="category1_7">
+                                    <label for="category1_7">휴대형 염도 측정기</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidemenu_box">
+                    <p class="sidemenu_tit01 c_blue bold2">브랜드별</p>
+                    <div class="sidemenu_check_list">
+                        <ul>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_1">
+                                    <label for="brand1_1">OHAUS</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_2">
+                                    <label for="brand1_2">JSR</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_3">
+                                    <label for="brand1_3">SONICS & MATERIALS</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_4">
+                                    <label for="brand1_4">ULCHEMICAL</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_5">
+                                    <label for="brand1_5">ILSHIN BIOBASE</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_6">
+                                    <label for="brand1_6">HANA SCIENCE</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_7">
+                                    <label for="brand1_7">PRIMIX</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_8">
+                                    <label for="brand1_8">THINKY</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_9">
+                                    <label for="brand1_9">WSA</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side_choice">
+                                    <input type="checkbox" id="brand1_10">
+                                    <label for="brand1_10">PHCbi/Panasonic</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subCont">
+                <div class="sub_search_box dp_f dp_c dp_end02">
+                    <select name="" id="">
+                        <option value="">통합검색</option>
+                    </select>
+                    <input type="text">
+                    <button><img src="../images/search_icon.png" alt="검색"></button>
+                </div>
+                <div class="introduce_itemBox_wrap">
+                    <div class="itemBox dp_f dp_c">
+                        <div class="itemBox_imgWrap"></div>
+                        <div class="itemBox_txtBox">
+                            <img class="item_brand_nm" src="" alt="">
+                            <p class="item_info_tit bold2">SHHD6850DG 헤비 듀티 궤도 셰이커</p>
+                            <ul class="item_info_box">
+                                <li class="dp_f dp_c">
+                                    <span>아이템 넘버:</span>
+                                    <span>30391886</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>이동:</span>
+                                    <span>궤도, 51 mm</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>용량:</span>
+                                    <span>68 kg</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>속도 범위:</span>
+                                    <span>15 rpm – 300 rpm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="itemBox dp_f dp_c">
+                        <div class="itemBox_imgWrap"></div>
+                        <div class="itemBox_txtBox">
+                            <img class="item_brand_nm" src="" alt="">
+                            <p class="item_info_tit bold2">SHHD6850DG 헤비 듀티 궤도 셰이커</p>
+                            <ul class="item_info_box">
+                                <li class="dp_f dp_c">
+                                    <span>아이템 넘버:</span>
+                                    <span>30391886</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>이동:</span>
+                                    <span>궤도, 51 mm</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>용량:</span>
+                                    <span>68 kg</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>속도 범위:</span>
+                                    <span>15 rpm – 300 rpm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="itemBox dp_f dp_c">
+                        <div class="itemBox_imgWrap"></div>
+                        <div class="itemBox_txtBox">
+                            <img class="item_brand_nm" src="" alt="">
+                            <p class="item_info_tit bold2">SHHD6850DG 헤비 듀티 궤도 셰이커</p>
+                            <ul class="item_info_box">
+                                <li class="dp_f dp_c">
+                                    <span>아이템 넘버:</span>
+                                    <span>30391886</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>이동:</span>
+                                    <span>궤도, 51 mm</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>용량:</span>
+                                    <span>68 kg</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>속도 범위:</span>
+                                    <span>15 rpm – 300 rpm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="itemBox dp_f dp_c">
+                        <div class="itemBox_imgWrap"></div>
+                        <div class="itemBox_txtBox">
+                            <img class="item_brand_nm" src="" alt="">
+                            <p class="item_info_tit bold2">SHHD6850DG 헤비 듀티 궤도 셰이커</p>
+                            <ul class="item_info_box">
+                                <li class="dp_f dp_c">
+                                    <span>아이템 넘버:</span>
+                                    <span>30391886</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>이동:</span>
+                                    <span>궤도, 51 mm</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>용량:</span>
+                                    <span>68 kg</span>
+                                </li>
+                                <li class="dp_f dp_c">
+                                    <span>속도 범위:</span>
+                                    <span>15 rpm – 300 rpm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="f_top gry02">
+            <div class="c_center dp_sb dp_c">
+                <div class="news_rolling dp_f dp_c">
+                    <div class="news_rolling_tit">공지사항</div>
+                    <div class="swiper news_rolling_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                            <div class="news_rolling_box swiper-slide">
+                                <div class="dp_sb dp_c">
+                                    <span class="news_roll_tit ellipsis">유엘케미칼 홈페이지가 오픈되었습니다.</span>
+                                    <span class="news_roll_date">2023-00-00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="privacy_menu dp_f dp_c dp_end02">
+                    <li><a class="bold2" href="" title="개인정보처리방침">개인정보처리방침</a></li>
+                    <li><a href="" title="이용약관">이용약관</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="f_bot">
+            <div class="c_center dp_sb">
+                <div class="f_bot_box">
+                    <img class="f_logo" src="../images/foot_logo.svg" alt="로고">
+                    <ul class="company_info_list">
+                        <li class="dp_f dp_c">
+                            <span class="bold2">주식회사 유엘케미칼</span>
+                            <span>대표자 : 김동현</span>
+                        </li>
+                        <li class="dp_f dp_c">대구 북구 유통단지로8길 120-10</li>
+                        <li class="dp_f dp_c">
+                            <span>사업자등록번호 : 504-86-06607</span>
+                            <span>통신판매업번호 : 2015-대구북구-0265</span>
+                        </li>
+                        <li class="dp_f dp_c">
+                            <span>TEL : 1544-7540</span>
+                            <span>FAX : 053-384-7716</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_bot_box dp_sb">
+                    <div class="cs_box">
+                        <p class="cs_box_tit roboto bold2">CS CENTER</p>
+                        <p class="represent_num roboto">1544-7540</p>
+                        <p class="email_info dp_f dp_c">
+                            <span>이메일</span>
+                            <span>ulchemical@naver.com</span>
+                        </p>
+                    </div>
+                    <div class="cs_box">
+                        <p class="cs_box_tit roboto bold2">BANK INFO</p>
+                        <p class="bank_owner bold2">예금주: (주)유엘케미칼</p>
+                        <p class="bank_num">00은행 000000-00-000000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var swiper03 = new Swiper(".news_rolling_swiper", {
+            direction: 'vertical',
+            effect: 'slide',
+            slidesPerView: 1,
+            autoplay: {     //자동슬라이드 (false-비활성화)
+                delay: 2500, // 시간 설정
+                disableOnInteraction: false, // false-스와이프 후 자동 재생
+            },
+            loop: true,
+        });
+    </script>
+</body>
+</html>

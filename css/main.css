@@ -47,6 +47,7 @@
     margin-right: 20px;
 }
 .header .h_bot {
+    position: relative;
     border-top: 1px solid #d1d1d1;
     height: 55px;
 }
@@ -79,15 +80,79 @@
 .h_bot .depth1 {
     margin-left: 40px;
 }
-.h_bot .depth1 li {
+.h_bot .depth1 > li {
     width: 150px;
     height: 100%;
 }
-.h_bot .depth1 li a {
+.h_bot .depth1 > li > a {
     width: 100%;
     height:100%;
     font-weight: 700;
     font-size:1.250rem;
+}
+.down_menu {
+    display: none;
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    position: absolute;
+    width: 100%;
+    min-height: 710px;
+    left:0;
+    top: 55px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 999;
+}
+.down_menu .down_menu_depth2 {
+    border-top: 1px solid #D1D1D1;
+    width: 100%;
+}
+.down_menu .down_menu_depth2:first-child {
+    border-top: none;
+}
+.down_menu .down_menu_depth2 > li {
+    width: 20%;
+}
+.down_menu .down_menu_depth2:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #D1D1D1;
+}
+.down_menu .down_menu_depth2 .toggle_btn {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+
+}
+.down_menu .down_menu_depth2 > li > a {
+    height: 50px;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center;
+    color: #0068B7;
+    font-weight: 700;
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+}
+.down_menu .down_menu_depth3 {
+    display: none;
+    margin: 15px 0 25px 0;
+}
+.down_menu .down_menu_depth3 > li {
+    margin-bottom: 5px;
+}
+.down_menu ul li a {
+    font-size: 1rem;
 }
 
 /*헤더영역*/
